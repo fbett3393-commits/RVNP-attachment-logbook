@@ -3,70 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Industrial Attachment Report - RVNP</title>
+<title>Industrial Attachment Report - Kipkorir Festus</title>
 
 <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f4f6f9;
-    line-height: 1.7;
+:root{
+  --charcoal:#1f1f1f;
+  --orange:#ff7a18;
+  --light:#f4f6f8;
+  --white:#ffffff;
 }
 
-header {
-    text-align: center;
-    padding: 20px;
-    background: white;
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:var(--light);
+  line-height:1.7;
+  color:#222;
 }
 
-header img {
-    width: 120px;
-    margin-bottom: 10px;
+/* HEADER */
+header{
+  background:linear-gradient(135deg,var(--charcoal),#2c2c2c);
+  color:white;
+  text-align:center;
+  padding:30px 15px;
 }
 
-nav {
-    background: #2c4f73;
-    padding: 10px;
-    text-align: center;
-    position: sticky;
-    top: 0;
+header img{
+  width:100px;
+  animation:pop 1s ease;
 }
 
-nav a {
-    color: white;
-    margin: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 13px;
+@keyframes pop{
+  from{transform:scale(0.5);opacity:0}
+  to{transform:scale(1);opacity:1}
 }
 
-.week {
-    background: white;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 1000px;
-    border-left: 6px solid #1f3b57;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+header h3{
+  color:var(--orange);
 }
 
-.day {
-    margin: 15px 0;
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-    text-align: justify;
+button{
+  background:var(--orange);
+  border:none;
+  padding:10px 18px;
+  color:white;
+  border-radius:6px;
+  cursor:pointer;
+  transition:0.3s;
 }
 
-h2 {
-    color: #1f3b57;
+button:hover{
+  background:#e86a10;
+  transform:scale(1.05);
 }
 
-button {
-    background: #1f3b57;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+/* NAV */
+nav{
+  position:sticky;
+  top:0;
+  background:var(--charcoal);
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  padding:10px;
+  z-index:1000;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:8px 12px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:var(--orange);
+}
+
+/* SECTIONS */
+section{
+  max-width:1000px;
+  margin:20px auto;
+  background:var(--white);
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* DAY BOX */
+.day{
+  border-left:5px solid var(--orange);
+  padding:10px 15px;
+  margin:10px 0;
+  background:#fafafa;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:10px;
+}
+
+.gallery div{
+  background:#eee;
+  padding:40px;
+  text-align:center;
+  border-radius:8px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:var(--charcoal);
+  color:white;
 }
 </style>
 </head>
@@ -74,171 +126,4 @@ button {
 <body>
 
 <header>
-    <img src="rvnp_logo.png" alt="RVNP Logo">
-
-    <h1>Industrial Attachment Mentoring Report</h1>
-    <p>Rift Valley National Polytechnic (RVNP)</p>
-    <p><b>Student Name:</b> Kipkorir Festus</p>
-    <p>Weeks 3 – 12 (Fabrication & Welding Experience)</p>
-
-    <button onclick="window.print()">Download PDF Report</button>
-</header>
-
-<nav>
-<a href="#week3">W3</a><a href="#week4">W4</a><a href="#week5">W5</a><a href="#week6">W6</a>
-<a href="#week7">W7</a><a href="#week8">W8</a><a href="#week9">W9</a><a href="#week10">W10</a>
-<a href="#week11">W11</a><a href="#week12">W12</a>
-</nav>
-
-<!-- WEEK 3 -->
-<div class="week" id="week3">
-<h2>Week 3</h2>
-
-<div class="day"><b>Monday:</b> Today I participated in the repair of a worn-out roller shaft used in an industrial machine. I inspected the damaged component to determine the extent of wear and material loss caused by continuous operation under load. I cleaned the surface thoroughly using a wire brush and grinder to remove rust, oil, and old weld deposits to ensure proper bonding during welding. I then built up the worn section using arc welding by depositing layers of weld metal while maintaining correct electrode angle, arc length, and travel speed. After welding, I allowed the component to cool naturally before grinding it to restore a smooth finish and inspecting it for defects such as cracks and porosity.</div>
-
-<div class="day"><b>Tuesday:</b> Today I practiced TIG welding on mild steel components under supervision. I prepared the workpieces by cleaning the surfaces to remove impurities that could affect weld quality. I set up the TIG machine, selected the appropriate tungsten electrode, and adjusted gas flow. During welding, I focused on maintaining a stable arc and steady hand movement while controlling heat input. I learned how to produce clean, precise welds with minimal spatter and distortion.</div>
-
-<div class="day"><b>Wednesday:</b> Today I fabricated a rectangular steel frame using square hollow sections. I studied the drawing to understand dimensions and material requirements. I measured, marked, and cut the steel accurately before removing burrs. I assembled the pieces on a flat surface, checked squareness, and tack welded joints before completing final welding. The finished frame was inspected for accuracy and alignment.</div>
-
-<div class="day"><b>Thursday:</b> Today I carried out grinding and finishing of fabricated components. I removed excess weld metal, sharp edges, and surface defects using an angle grinder. I prepared surfaces for painting by ensuring they were clean and smooth. I also inspected the final product for dimensional accuracy and weld quality.</div>
-
-<div class="day"><b>Friday:</b> Today I performed maintenance of welding equipment, including cleaning arc and MIG welding machines, inspecting cables, electrode holders, and gas hoses. I also organized tools and ensured proper workshop housekeeping and safe disposal of scrap materials.</div>
-</div>
-
-<!-- WEEK 4 -->
-<div class="week" id="week4">
-<h2>Week 4</h2>
-
-<div class="day"><b>Monday:</b> Today I fabricated a metal support stand using square hollow sections. I interpreted the drawing, measured and marked materials accurately, and cut them using a cutting machine. I ensured correct alignment before tack welding and final welding.</div>
-
-<div class="day"><b>Tuesday:</b> Today I practiced arc welding joints including butt, lap, T-joints, and corner joints. I focused on electrode angle, arc length, and travel speed. My supervisor inspected welds and corrected my technique.</div>
-
-<div class="day"><b>Wednesday:</b> Today I assisted in MIG welding a steel frame. I set machine parameters, cleaned surfaces, and welded continuously while controlling spatter and maintaining consistent bead formation.</div>
-
-<div class="day"><b>Thursday:</b> Today I repaired a cracked metal bracket using arc welding. I prepared joint edges, welded in layers, and ground the surface smooth after cooling. I inspected for cracks and defects.</div>
-
-<div class="day"><b>Friday:</b> Today I carried out workshop housekeeping, machine cleaning, inspection of cables, and ensured safe storage of tools and equipment.</div>
-</div>
-
-<!-- WEEK 5 -->
-<div class="week" id="week5">
-<h2>Week 5</h2>
-
-<div class="day"><b>Monday:</b> Today I learned how to interpret fabrication drawings including welding symbols and dimensions. I prepared material lists for fabrication tasks.</div>
-
-<div class="day"><b>Tuesday:</b> Today I fabricated a machine frame using SHS sections, ensuring accurate measurement, cutting, fitting, and welding.</div>
-
-<div class="day"><b>Wednesday:</b> Today I repaired a worn roller shaft using arc welding buildup and grinding to restore original dimensions.</div>
-
-<div class="day"><b>Thursday:</b> Today I practiced TIG welding on thin steel plates, controlling heat input and producing clean weld beads.</div>
-
-<div class="day"><b>Friday:</b> Today I inspected fabricated products for quality and performed workshop cleaning and organization.</div>
-</div>
-
-<!-- WEEK 6 -->
-<div class="week" id="week6">
-<h2>Week 6</h2>
-
-<div class="day"><b>Monday:</b> Today I fabricated a trolley frame using accurate measurement and cutting of steel sections.</div>
-
-<div class="day"><b>Tuesday:</b> Today I assembled and tack welded trolley frame ensuring correct alignment and squareness.</div>
-
-<div class="day"><b>Wednesday:</b> Today I carried out MIG welding on trolley frame ensuring continuous welds and minimal spatter.</div>
-
-<div class="day"><b>Thursday:</b> Today I performed grinding and finishing to remove sharp edges and prepare surface for painting.</div>
-
-<div class="day"><b>Friday:</b> Today I assisted in equipment maintenance and workshop safety checks.</div>
-</div>
-
-<!-- WEEK 7 -->
-<div class="week" id="week7">
-<h2>Week 7</h2>
-
-<div class="day"><b>Monday:</b> Today I repaired a machine component using arc welding buildup and grinding.</div>
-
-<div class="day"><b>Tuesday:</b> Today I practiced TIG welding on stainless steel with heat control and clean weld formation.</div>
-
-<div class="day"><b>Wednesday:</b> Today I fabricated a steel support bracket using accurate cutting and welding.</div>
-
-<div class="day"><b>Thursday:</b> Today I assisted in cutting and fitting steel pipes for fabrication work.</div>
-
-<div class="day"><b>Friday:</b> Today I performed quality inspection of fabricated components and ensured compliance with standards.</div>
-</div>
-
-<!-- WEEK 8 -->
-<div class="week" id="week8">
-<h2>Week 8</h2>
-
-<div class="day"><b>Monday:</b> Today I fabricated a steel workbench frame using drawing interpretation and accurate marking.</div>
-
-<div class="day"><b>Tuesday:</b> Today I carried out arc welding on workbench frame and removed slag after welding.</div>
-
-<div class="day"><b>Wednesday:</b> Today I repaired a roller shaft using arc welding and grinding finishing.</div>
-
-<div class="day"><b>Thursday:</b> Today I practiced MIG welding and learned to reduce spatter.</div>
-
-<div class="day"><b>Friday:</b> Today I carried out workshop housekeeping and safety maintenance.</div>
-</div>
-
-<!-- WEEK 9 -->
-<div class="week" id="week9">
-<h2>Week 9</h2>
-
-<div class="day"><b>Monday:</b> Today I fabricated a steel support stand ensuring proper alignment and fitting.</div>
-
-<div class="day"><b>Tuesday:</b> Today I performed TIG welding on thin steel materials with precision.</div>
-
-<div class="day"><b>Wednesday:</b> Today I repaired cracked metal bracket using arc welding techniques.</div>
-
-<div class="day"><b>Thursday:</b> Today I performed grinding and finishing on fabricated products.</div>
-
-<div class="day"><b>Friday:</b> Today I carried out maintenance of welding equipment and workshop organization.</div>
-</div>
-
-<!-- WEEK 10 -->
-<div class="week" id="week10">
-<h2>Week 10</h2>
-
-<div class="day"><b>Monday:</b> Today I fabricated heavy-duty steel frame using fabrication drawings and cutting operations.</div>
-
-<div class="day"><b>Tuesday:</b> Today I assembled and welded steel frame ensuring alignment accuracy.</div>
-
-<div class="day"><b>Wednesday:</b> Today I repaired machine rollers using arc welding buildup method.</div>
-
-<div class="day"><b>Thursday:</b> Today I practiced MIG welding and adjusted machine parameters for quality welds.</div>
-
-<div class="day"><b>Friday:</b> Today I carried out workshop maintenance and equipment inspection.</div>
-</div>
-
-<!-- WEEK 11 -->
-<div class="week" id="week11">
-<h2>Week 11</h2>
-
-<div class="day"><b>Monday:</b> Today I fabricated steel structure using SHS sections and ensured correct assembly.</div>
-
-<div class="day"><b>Tuesday:</b> Today I performed TIG welding with focus on precision and clean weld appearance.</div>
-
-<div class="day"><b>Wednesday:</b> Today I repaired cracked steel bracket using arc welding and grinding.</div>
-
-<div class="day"><b>Thursday:</b> Today I conducted quality inspection of fabricated products.</div>
-
-<div class="day"><b>Friday:</b> Today I carried out workshop cleaning and preventive maintenance.</div>
-</div>
-
-<!-- WEEK 12 -->
-<div class="week" id="week12">
-<h2>Week 12</h2>
-
-<div class="day"><b>Monday:</b> Today I completed a full fabrication project from cutting, fitting, welding, and assembly.</div>
-
-<div class="day"><b>Tuesday:</b> Today I repaired machine components using arc welding and finishing techniques.</div>
-
-<div class="day"><b>Wednesday:</b> Today I compared MIG and TIG welding techniques in practical application.</div>
-
-<div class="day"><b>Thursday:</b> Today I performed final inspection and surface finishing of fabricated products.</div>
-
-<div class="day"><b>Friday:</b> Today I completed my industrial attachment, reviewed skills gained, and participated in final workshop cleanup.</div>
-</div>
-
-</body>
-  </html>
+  <img src="
